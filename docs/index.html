@@ -28,6 +28,19 @@
   <meta name="twitter:description" content="只在你选的目录里工作，只在本机拦截和记录，不上传文件内容。">
   <meta name="twitter:image" content="https://yqyqyq123abc.github.io/Vigil/og.png">
   <meta name="twitter:card" content="summary_large_image">
+  <script>
+    /* Set the language before first paint so the right translation is visible immediately. */
+    (function () {
+      try {
+        var q = /[?&]lang=(zh|en)\b/.exec(window.location.search);
+        var stored = window.localStorage.getItem("vigil.lang");
+        var lang = q ? q[1] : (stored === "zh" || stored === "en" ? stored : ((navigator.language || "").toLowerCase().indexOf("zh") === 0 ? "zh" : "en"));
+        var root = document.documentElement;
+        root.setAttribute("data-lang", lang);
+        root.setAttribute("lang", lang === "zh" ? "zh-CN" : "en");
+      } catch (error) { /* keep the zh default */ }
+    })();
+  </script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -397,6 +410,6 @@
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
