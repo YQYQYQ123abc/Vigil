@@ -52,3 +52,6 @@ fastlane/test_output
 # Build artifacts
 *.xcarchive
 *.app
+
+# local preview artifacts
+.preview/

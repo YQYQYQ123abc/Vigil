@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>警惕 Vigil · 保护你自己电脑上的重要文件</title>
+  <meta name="description" content="警惕 / Vigil 把你在用的目录加入保护清单：只在本机工作，不上传文件内容，出现受保护的操作、保护中断或疑似换人时拦截、记录或提醒。">
+  <link rel="canonical" href="https://yqyqyq123abc.github.io/Vigil/">
+  <link rel="icon" href="icon.png">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="alternate" hreflang="zh-Hans" href="https://yqyqyq123abc.github.io/Vigil/">
+  <link rel="alternate" hreflang="en" href="https://yqyqyq123abc.github.io/Vigil/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://yqyqyq123abc.github.io/Vigil/">
+  <meta name="theme-color" content="#f5f4f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vigil">
+  <meta property="og:title" content="警惕 Vigil · 保护你自己电脑上的重要文件">
+  <meta property="og:description" content="只在你选的目录里工作，只在本机拦截和记录，不上传文件内容。">
+  <meta property="og:url" content="https://yqyqyq123abc.github.io/Vigil/">
+  <meta property="og:image" content="https://yqyqyq123abc.github.io/Vigil/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="警惕 / Vigil — 保护你自己电脑上的重要文件">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:title" content="警惕 Vigil · 保护你自己电脑上的重要文件">
+  <meta name="twitter:description" content="只在你选的目录里工作，只在本机拦截和记录，不上传文件内容。">
+  <meta name="twitter:image" content="https://yqyqyq123abc.github.io/Vigil/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main"><span class="l-zh">跳到主要内容</span><span class="l-en">Skip to content</span></a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./" aria-label="Vigil">
+        <img src="icon.png" width="36" height="36" alt="">
+        <span class="brand-text">
+          <span class="brand-name">警惕 <span style="color:var(--faint);font-weight:400">/</span> Vigil</span>
+          <span class="brand-sub">Local watch</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a class="nav-hide" href="#why"><span class="l-zh">为什么</span><span class="l-en">Why</span></a>
+        <a class="nav-hide" href="#boundaries"><span class="l-zh">边界</span><span class="l-en">Boundaries</span></a>
+        <a class="nav-hide" href="#data"><span class="l-zh">数据</span><span class="l-en">Data</span></a>
+        <a class="nav-hide" href="#about"><span class="l-zh">关于</span><span class="l-en">About</span></a>
+        <span class="lang-switch" role="group" aria-label="Language / 语言">
+          <button type="button" data-set-lang="zh" aria-pressed="true" lang="zh-CN">中文</button>
+          <button type="button" data-set-lang="en" aria-pressed="false" lang="en">EN</button>
+        </span>
+        <a class="nav-github" href="https://github.com/YQYQYQ123abc/Vigil" target="_blank" rel="noopener">
+          GitHub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>
+          <span class="l-zh">仅本机 · 无需账号 · 不上传文件内容</span>
+          <span class="l-en">On-device · No account · No file uploads</span>
+        </p>
+        <h1>
+          <span class="l-zh">文件留在原地，<br><span class="accent">有人碰它，你会知道。</span></span>
+          <span class="l-en">Your files stay put.<br><span class="accent">You'll know if someone touches them.</span></span>
+        </h1>
+        <p class="lead">
+          <span class="l-zh">「警惕 / Vigil」把你在用的目录加入保护清单。日常使用保持安静；出现受保护的操作、保护中断或疑似换人时，按实际能力拦截、记录或提醒。</span>
+          <span class="l-en">Vigil adds folders you already use to a protection list. It stays quiet day to day, and intercepts, records, or alerts when a protected action happens — or when protection itself breaks.</span>
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#boundaries">
+            <span class="l-zh">看看它做什么、不做什么</span>
+            <span class="l-en">What it does — and doesn't</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"/><path d="M12 5l7 7-7 7"/></svg>
+          </a>
+          <a class="button" href="https://github.com/YQYQYQ123abc/Vigil" target="_blank" rel="noopener">
+            <span class="l-zh">查看源码</span>
+            <span class="l-en">Source on GitHub</span>
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h7l4 4v13h-11z"/><path d="M13.5 3.5v4h4"/></svg>
+            <span class="l-zh">只保护你选的目录</span><span class="l-en">Only the folders you pick</span>
+          </span>
+          <i aria-hidden="true"></i>
+          <span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.3-2.9 7.6-7 9-4.1-1.4-7-4.7-7-9V6z"/><path d="M9.2 11.6l2 2 3.7-4.1"/></svg>
+            <span class="l-zh">事件默认留在本机</span><span class="l-en">Records stay on this Mac</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="motif" aria-hidden="true">
+        <span class="motif-label top">watch</span>
+        <svg viewBox="0 0 400 400" role="presentation">
+          <defs>
+            <radialGradient id="vigil-glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" class="glow-stop-a"/>
+              <stop offset="58%" class="glow-stop-b"/>
+              <stop offset="100%" class="glow-stop-c"/>
+            </radialGradient>
+          </defs>
+          <circle cx="200" cy="200" r="182" fill="none" stroke="var(--line-strong)" stroke-width="1" stroke-dasharray="2 7"/>
+          <circle class="ring" cx="200" cy="200" r="150" fill="none" stroke="var(--line)" stroke-width="1"/>
+          <circle class="ring" cx="200" cy="200" r="118" fill="none" stroke="var(--line)" stroke-width="1" style="animation-delay:-2.6s"/>
+          <path d="M62 200C110 122 290 122 338 200C290 278 110 278 62 200Z" fill="none" stroke="var(--ink)" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+          <circle cx="200" cy="200" r="47" fill="none" stroke="var(--ink)" stroke-width="7"/>
+          <circle class="signal-glow" cx="274" cy="290" r="92" fill="url(#vigil-glow)"/>
+          <path d="M274 240L312 306H236Z" fill="var(--signal)" stroke="var(--signal)" stroke-width="12" stroke-linejoin="round"/>
+          <path d="M274 262V283" stroke="var(--paper)" stroke-width="7" stroke-linecap="round"/>
+          <circle cx="274" cy="294" r="4.6" fill="var(--paper)"/>
+        </svg>
+        <span class="motif-label bottom">stays on device</span>
+      </div>
+    </section>
+
+    <p class="status">
+      <span class="l-zh"><strong>开发预览。</strong>macOS 版正在完成目录持久化与系统扩展，iOS 端随后接入。本页只描述已经确定的产品边界，不列举尚未实现的功能。</span>
+      <span class="l-en"><strong>In development.</strong> The macOS app is finishing directory persistence and its system extension; iOS follows. This page describes settled boundaries only — no features that do not exist yet.</span>
+    </p>
+
+    <section class="section" id="why">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">WHY VIGIL</p>
+          <h2 class="section-title">
+            <span class="l-zh">保护文件，<br>不需要把文件交出去。</span>
+            <span class="l-en">Protect your files<br>without handing them over.</span>
+          </h2>
+        </div>
+        <p class="section-copy">
+          <span class="l-zh">你继续用 Finder 和原来的应用工作。警惕只在你指定的目录里工作，不给文件加壳，也不搬走它们。</span>
+          <span class="l-en">Keep working in Finder and your usual apps. Vigil works only inside the folders you name — it does not wrap files or move them elsewhere.</span>
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card">
+          <div class="icon-tile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 7.5a2 2 0 0 1 2-2h3.2l1.8 2h6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2z"/><path d="M9 13.5l2 2 4-4.5"/></svg>
+          </div>
+          <h3><span class="l-zh">你选目录</span><span class="l-en">You choose the folders</span></h3>
+          <p>
+            <span class="l-zh">用系统选择器把已有目录加入清单，显示真实路径，随时可以移出。文件留在原来的位置，Finder 里照常打开。</span>
+            <span class="l-en">Add existing folders with the system picker, see their real paths, remove them whenever you want. Files stay where they are and open as usual in Finder.</span>
+          </p>
+          <div class="pill-row">
+            <span class="pill"><span class="l-zh">系统选择器</span><span class="l-en">System picker</span></span>
+            <span class="pill"><span class="l-zh">可移出</span><span class="l-en">Removable</span></span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="icon-tile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="12" rx="2"/><path d="M8 20h8"/><path d="M12 16.5V20"/><path d="M3.2 20.8L20.8 3.2"/></svg>
+          </div>
+          <h3><span class="l-zh">只在本机</span><span class="l-en">On this Mac only</span></h3>
+          <p>
+            <span class="l-zh">拦截判断、事件记录和证据都发生在当前这台电脑上。不监控整个系统，也不读取你没有选中的文件。</span>
+            <span class="l-en">Decisions, records, and evidence all stay on this machine. Vigil does not watch the whole system, and never reads files outside your list.</span>
+          </p>
+          <div class="pill-row">
+            <span class="pill"><span class="l-zh">本机处理</span><span class="l-en">Local only</span></span>
+            <span class="pill"><span class="l-zh">无需账号</span><span class="l-en">No account</span></span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="icon-tile signal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.6 12S6.2 6.2 12 6.2 21.4 12 21.4 12 17.8 17.8 12 17.8 2.6 12 2.6 12Z"/><circle cx="12" cy="12" r="2.6"/></svg>
+          </div>
+          <h3><span class="l-zh">安静，但会开口</span><span class="l-en">Quiet, until it matters</span></h3>
+          <p>
+            <span class="l-zh">正常使用不打扰。只有出现受保护的操作、保护中断，或疑似换人时，才按系统实际能力拦截、记录或提醒。</span>
+            <span class="l-en">No noise in normal use. When a protected action happens, protection breaks, or the person at the desk may have changed, Vigil intercepts, records, or alerts — as far as the system allows.</span>
+          </p>
+          <div class="pill-row">
+            <span class="pill"><span class="l-zh">拦截</span><span class="l-en">Block</span></span>
+            <span class="pill"><span class="l-zh">记录</span><span class="l-en">Record</span></span>
+            <span class="pill"><span class="l-zh">提醒</span><span class="l-en">Alert</span></span>
+          </div>
+        </article>
+      </div>
+
+      <ul class="spec-strip" aria-label="产品概览">
+        <li>
+          <strong><span class="l-zh">你选的目录</span><span class="l-en">Your folders</span></strong>
+          <span><span class="l-zh">保护范围</span><span class="l-en">Scope</span></span>
+        </li>
+        <li>
+          <strong><span class="l-zh">仅本机</span><span class="l-en">On-device</span></strong>
+          <span><span class="l-zh">拦截与记录</span><span class="l-en">Enforcement</span></span>
+        </li>
+        <li>
+          <strong><span class="l-zh">不上传</span><span class="l-en">Zero uploads</span></strong>
+          <span><span class="l-zh">文件内容</span><span class="l-en">File content</span></span>
+        </li>
+        <li>
+          <strong><span class="l-zh">0</span><span class="l-en">0</span></strong>
+          <span><span class="l-zh">账号与广告</span><span class="l-en">Accounts &amp; ads</span></span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="boundaries">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">BOUNDARIES</p>
+          <h2 class="section-title">
+            <span class="l-zh">做得到的事，<br>和明确不做的事。</span>
+            <span class="l-en">What it does —<br>and what it will not do.</span>
+          </h2>
+        </div>
+        <p class="section-copy">
+          <span class="l-zh">把边界写清楚，比「全面防护」这类说法更有用。下面每一条都和产品设计一致，不夸大能力。</span>
+          <span class="l-en">Clear boundaries beat phrases like "full protection". Every line below matches how the product is actually designed.</span>
+        </p>
+      </div>
+
+      <div class="boundary-grid">
+        <div class="boundary yes">
+          <div class="boundary-head">
+            <span class="mark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11"/></svg>
+            </span>
+            <h3><span class="l-zh">会做</span><span class="l-en">It does</span></h3>
+          </div>
+          <ul>
+            <li>
+              <span class="l-zh"><b>你选的目录</b>进入保护清单，可随时移出，文件位置不变。</span>
+              <span class="l-en"><b>Your chosen folders</b> join the protection list, removable at any time, with files left in place.</span>
+            </li>
+            <li>
+              <span class="l-zh"><b>受保护的操作</b>按实际能力拦截或记录，文案只陈述发生了什么。</span>
+              <span class="l-en"><b>Protected actions</b> are blocked or recorded within what the system allows, described in plain factual wording.</span>
+            </li>
+            <li>
+              <span class="l-zh"><b>暂停保护、移出目录</b>和修改敏感设置之前，要求先在本机完成验证。</span>
+              <span class="l-en"><b>Pausing protection, removing a folder,</b> or changing sensitive settings requires local verification first.</span>
+            </li>
+            <li>
+              <span class="l-zh"><b>事件、时间与结果</b>写入本机记录，之后可以按时间回查。</span>
+              <span class="l-en"><b>Events, times, and outcomes</b> are written to a local record you can review later.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="boundary no">
+          <div class="boundary-head">
+            <span class="mark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6L6 18"/></svg>
+            </span>
+            <h3><span class="l-zh">不会做</span><span class="l-en">It will not</span></h3>
+          </div>
+          <ul>
+            <li>
+              <span class="l-zh">不<b>监控整个系统</b>：只在你选中的目录里工作。</span>
+              <span class="l-en">Never <b>monitors the whole system</b>: it works only inside the folders you selected.</span>
+            </li>
+            <li>
+              <span class="l-zh">不<b>上传文件内容</b>：没有账号依赖，也没有广告和遥测。</span>
+              <span class="l-en">Never <b>uploads file contents</b>: no account dependency, no ads, no telemetry.</span>
+            </li>
+            <li>
+              <span class="l-zh">不在你不知情时<b>录屏或打开摄像头</b>；需要时先展示范围，并在使用中持续显示状态。</span>
+              <span class="l-en">Never <b>records the screen or opens the camera</b> without your knowledge; when needed, the scope is shown first and the state stays visible.</span>
+            </li>
+            <li>
+              <span class="l-zh">不承诺<b>做不到的拦截</b>：已经打开的文件、已经进入应用内存的内容，会如实记录结果。</span>
+              <span class="l-en">Never <b>promises blocks it cannot make</b>: for files already open or content already in an app's memory, the outcome is recorded honestly.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="section-note">
+        <span class="l-zh">「拦截」指系统在操作发生前作出决定；实际覆盖范围以签名原型在真机上的测试结果为准。已打开的文件、已进入应用内存的内容，以及后台同步和外部传输，分别记录结论。</span>
+        <span class="l-en">"Blocking" means the system decides before an action completes; real coverage is measured on signed builds on real hardware. Files already open, content already in memory, background sync, and external transfers are each recorded separately.</span>
+      </p>
+    </section>
+
+    <section class="section" id="data">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">DATA</p>
+          <h2 class="section-title">
+            <span class="l-zh">数据怎么处理。</span>
+            <span class="l-en">How data is handled.</span>
+          </h2>
+        </div>
+        <p class="section-copy">
+          <span class="l-zh">默认路径很短：留在本机，留在你自己的目录里。没有需要注册的账号，也没有需要上传的文件。</span>
+          <span class="l-en">The default path is short: on this Mac, inside your own folders. There is no account to create and no file to upload.</span>
+        </p>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <div class="step-num">1</div>
+          <h3><span class="l-zh">只读你选的目录</span><span class="l-en">Reads only your folders</span></h3>
+          <p>
+            <span class="l-zh">保护范围由你指定。系统权限按功能需要申请，缺失时页面会明确说明哪些保护暂时不可用。</span>
+            <span class="l-en">You define the scope. System permissions are requested per feature; when one is missing, the app says which protection is unavailable.</span>
+          </p>
+          <span class="step-tag"><span class="l-zh">范围</span><span class="l-en">Scope</span></span>
+        </article>
+        <article class="step">
+          <div class="step-num">2</div>
+          <h3><span class="l-zh">事件与证据留在本机</span><span class="l-en">Records stay on this Mac</span></h3>
+          <p>
+            <span class="l-zh">谁在什么时间做了什么、结果如何，写在本机记录里。证据的保留期限由你在设置中管理。</span>
+            <span class="l-en">Who did what, when, and how it turned out goes into a local record. You decide how long evidence is kept.</span>
+          </p>
+          <span class="step-tag"><span class="l-zh">存储</span><span class="l-en">Storage</span></span>
+        </article>
+        <article class="step">
+          <div class="step-num">3</div>
+          <h3><span class="l-zh">不上传文件内容</span><span class="l-en">No file uploads</span></h3>
+          <p>
+            <span class="l-zh">文件内容不离开这台电脑。日后接入手机提醒时，也只传事件摘要，不含文件名称和路径。</span>
+            <span class="l-en">File contents never leave this Mac. When phone alerts arrive later, they will carry event summaries only — no file names or paths.</span>
+          </p>
+          <span class="step-tag"><span class="l-zh">网络</span><span class="l-en">Network</span></span>
+        </article>
+      </div>
+
+      <p class="section-note">
+        <span class="l-zh">事件记录可能包含文件名、路径与操作时间，这些内容只保存在本机。本页由 GitHub Pages 托管，访问本页时适用 GitHub 的隐私政策。</span>
+        <span class="l-en">Event records may include file names, paths, and timestamps — all kept on this machine. This page is hosted by GitHub Pages, so visiting it is subject to GitHub's privacy policy.</span>
+      </p>
+    </section>
+
+    <section class="section" id="about">
+      <div class="about">
+        <div>
+          <h2>
+            <span class="l-zh">谁在做。</span>
+            <span class="l-en">Who builds it.</span>
+          </h2>
+          <p>
+            <span class="l-zh">「警惕」由一位独立开发者制作和维护。没有公司后台，所以产品边界写得具体：能做到的事说清楚，做不到的事也照实写。</span>
+            <span class="l-en">Vigil is designed and maintained by an independent developer. There is no company behind it, which is why the boundaries are spelled out — what it can do, and what it honestly cannot.</span>
+          </p>
+          <p>
+            <span class="l-zh">关于产品、上架或审批的问题，直接写信即可。</span>
+            <span class="l-en">For product, listing, or review questions, just write in.</span>
+          </p>
+        </div>
+        <ul class="contact-list">
+          <li>
+            <span class="label"><span class="l-zh">开发者</span><span class="l-en">Developer</span></span>
+            <span class="value"><span class="l-zh">独立开发者 · @YQYQYQ123abc</span><span class="l-en">Independent developer · @YQYQYQ123abc</span></span>
+          </li>
+          <li>
+            <span class="label"><span class="l-zh">联系</span><span class="l-en">Contact</span></span>
+            <!-- TODO: 换成提交 App Store 申请时用的邮箱 -->
+            <span class="value"><a href="mailto:contact@example.com">contact@example.com</a></span>
+          </li>
+          <li>
+            <span class="label"><span class="l-zh">源码</span><span class="l-en">Source</span></span>
+            <span class="value"><a href="https://github.com/YQYQYQ123abc/Vigil" target="_blank" rel="noopener">github.com/YQYQYQ123abc/Vigil</a></span>
+          </li>
+          <li>
+            <span class="label"><span class="l-zh">更新</span><span class="l-en">Updated</span></span>
+            <span class="value"><span class="l-zh">2026 年 11 月</span><span class="l-en">November 2026</span></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-inner">
+        <div>
+          <a class="footer-brand" href="./"><img src="icon.png" width="24" height="24" alt="">警惕 / Vigil</a>
+          <p class="footer-note">
+            <span class="l-zh">保护你自己电脑上原有位置的重要文件。本页由 GitHub Pages 托管；访问本页适用 GitHub 的隐私政策。© 2026 Vigil</span>
+            <span class="l-en">Protecting the important files you keep where they already are. Hosted on GitHub Pages; visits are subject to GitHub's privacy policy. © 2026 Vigil</span>
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="#boundaries"><span class="l-zh">边界</span><span class="l-en">Boundaries</span></a>
+          <a href="#data"><span class="l-zh">数据</span><span class="l-en">Data</span></a>
+          <a href="mailto:contact@example.com"><span class="l-zh">邮件</span><span class="l-en">Email</span></a>
+          <a href="https://github.com/YQYQYQ123abc/Vigil" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
